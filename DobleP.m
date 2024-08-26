@@ -11,7 +11,7 @@ dx = zeros(4,1);
 %--------definicion de las matrices---%
 M=[(m1+m2)*l1       m2*l2*cos(x(2)-x(1));
   l1*cos(x(2)-x(1))          l2];
-C=[c1 m2*l2*x(4)*sin(x(2)-x(1)); l1*x(3)*sin(x(2)-x(1)) 0];
+C=[c1 -m2*l2*x(4)*sin(x(2)-x(1)); l1*x(3)*sin(x(2)-x(1)) 0];
 G=[(m1 + m2)*g*sin(x(1));g*sin(x(2))];
 %--------definicion de la dinamica del sistema----%
 dx(1) = x(3);
